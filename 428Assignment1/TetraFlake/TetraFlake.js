@@ -132,22 +132,7 @@ function BreakupSegment(segment){
 
 window.onload = function init()
 {
-    var ab = vec2(-0.5, 0);
-    var bc = vec2(0.5, 0);
-    var top = vec2(0, Math.sqrt(3)/2);
 
-    var mid = mix(ab, bc, 1/2);
-    var newtip = mix(top, mid, 4/3);
-
-    var m2 = mix(ab, top, 1/2);
-    var newtip2 = mix(bc, m2, 4/3);
-
-    console.log(top, "TOP");
-    console.log(newtip, "NEW TIP");
-    console.log(newtip2, "NEW TIP");
-    if(1 == 1){
-        return;
-    }
     canvas = document.getElementById("gl-canvas");
 
     gl = canvas.getContext('webgl2');
